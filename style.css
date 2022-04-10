@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/slide/1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: aliceblue;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    font-size: 10px;
+    position: 50%;
+}
+.login{
+    width: 94%;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: white;
+    font-weight: bolder;
+    background-color: transparent;
+}
+.signup{
+    width: 94%;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    color: white;
+    font-weight: bolder;
+    background-color: transparent;
+}
+.sidebar{
+    width: 96px;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.facebook , .discord , .email{
+    width: 50px;
+    height: 50px;
+}
+.support img{
+    cursor: pointer;
+}
+.support{
+    width: 96px;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+}
+.titlemessage{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.tmmessage{
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 5px 5px #2e242c;
+}
+.tmsub{
+    color: lightgray;
+    font-family: 'Beau Rivage', cursive;
+}
+.popuplogin {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.popupsignup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.popupbinfo {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.login-popup {
+    background-color: #b4b4b4;
+    margin: auto;
+    padding: 10px 25px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;  
+}
+.signup-popup {
+    background-color: #b4b4b4;
+    margin: auto;
+    padding: 10px 25px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;  
+}
+.binfo-popup {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    margin: auto;
+    padding: 10px 25px;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;  
+}
+.closesignup {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.closelogin {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.closebinfo {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul{
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 5%
+    
+}
+ol{
+    position: relative;
+    left: 5%;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+li{
+    color: white;
+}
+.p4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px #2e242c;
+}
+.b-info{
+    color: aliceblue;
+    padding: 20px 75px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    position: absolute;
+    top: 120%;
+    font-weight: bold;   
+
+}
+.moto{
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+}

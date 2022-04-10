@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ghostplays's Website</title>
+        <link rel="icon" href="image/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div id="popup2" class="popuplogin">
+                <div class="login-popup">
+                    <span class="closelogin">&times;</span>
+                    <p class="p2">Login</p>
+                    <p class="p1">Sorry this feature are under Maintenance</p>
+                </div>
+            </div> 
+            <div id="popup1" class="popupsignup">
+                <div class="signup-popup">
+                    <span class="closesignup">&times;</span>
+                    <p class="p2">Sign Up</p>
+                    <p class="p1">Sorry this feature are under Maintenance</p>
+                </div>
+            </div>    
+            <div id="popup3" class="popupbinfo">
+                <div class="binfo-popup">
+                    <span class="closebinfo">&times;</span>
+                    <p class="p4">Ghostplays Info</p>
+                    <p class="p3">
+                        <ul>
+                            <li>RealName: Reymond Ros</li>
+                            <li>Age/Gender: 19 / Male</li>
+                            <li>Nationality: Filipino</li>
+                            <li>Status: Single</li>
+                            <li>Minecraft staff</li>
+                            <ol>
+                                <li>BlastMC : play.blastmc.asia</li>
+                                <li>BarangayCraft: UnknownIP</li>
+                            </ol>
+                            <li>Moto</li>
+                            <p class="moto">"Bkt mo gagawin ngayun kung pwede naman bukas hanggang bukas ulit hanggang makalimutan mo na"</p>
+                        </ul>  
+                    </p> 
+                </div>
+            </div>      
+           
+
+            <div class="navbar">
+                <img src="image/Logo1.png" class="logo"> 
+            </div>
+            <div class="titlemessage">
+                <h1 class="tmmessage">Welcome to<br>Ghostplays Website</h1>
+                <h1 class="tmsub">Minecraft Admin (BlastMC)</h1>
+                <button type="button" class="b-info" id="binfo">Info</button>
+            </div>
+            
+            <div class="sidebar">
+                <button type="button" class="login" id="mylogin">Login</button>
+                <button type="button" class="signup" id="mysignup">Sign Up</button>
+                <div class="support">
+                    <a href="mailto:rros0696@gmail.com" target="_blank"><img src="image/email.png" alt="Email" class="email"></a>
+                    <a href="https://discord.com/channels/766295849738567701" target="_blank"><img src="image/discord.png" alt="Discord" class="discord"></a>
+                    <a href="https://facebook.com/kupsreymond0696" target="_blank"><img src="image/facebook.png" alt="Facebook" class="facebook"></a>
+                </div>
+            </div>
+            <script>
+                function changeBg(){
+                    const image = [
+                        'url("image/slide/1.jpg")',
+                        'url("image/slide/2.jpg")',
+                        'url("image/slide/3.jpg")',
+                        'url("image/slide/4.jpg")',
+                        'url("image/slide/5.jpg")',
+                        'url("image/slide/6.jpg")',
+                        'url("image/slide/7.jpg")',
+                    ]
+                    const section = document.querySelector("section")
+                    const bg = image[Math.floor(Math.random() * image.length)];
+                    section.style.backgroundImage = bg;
+                }
+                setInterval(changeBg, 5000)
+            </script>           
+            <script>
+                var popuplogin = document.getElementById("popup2");
+                var popupsignup = document.getElementById("popup1");
+                var popupbinfo = document.getElementById("popup3");
+                var btn1 = document.getElementById("mylogin");
+                var btn = document.getElementById("mysignup");
+                var btn2 = document.getElementById("binfo");
+                var spanlogin = document.getElementsByClassName("closelogin")[0];
+                var spansignup = document.getElementsByClassName("closesignup")[0];
+                var spanbinfo = document.getElementsByClassName("closebinfo")[0];
+                btn2.onclick = function() {
+                    popupbinfo.style.display = "block";
+                }
+                btn1.onclick = function() {
+                    popuplogin.style.display = "block";
+                }
+                btn.onclick = function() {
+                    popupsignup.style.display = "block";
+                }
+                spanlogin.onclick = function() {
+                    popuplogin.style.display = "none";
+                }
+                spanbinfo.onclick = function() {
+                    popupbinfo.style.display = "none";
+                }
+                spansignup.onclick = function() {
+                    popupsignup.style.display = "none";
+                }
+                window.onclick = function(event) {
+                    if (event.target == popuplogin) {
+                    popuplogin.style.display = "none";
+                    }
+                }
+                window.onclick = function(event) {
+                    if (event.target == popupbinfo) {
+                    popupbinfo.style.display = "none";
+                    }
+                }
+                window.onclick = function(event) {
+                    if (event.target == popupsignup) {
+                    popupsignup.style.display = "none";
+                    }
+                }
+            </script>
+    
+        </section>
+    </body>
+</html>
